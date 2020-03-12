@@ -1,10 +1,10 @@
-package com.example.getitems.ItemIndexViewModel;
-
+package com.example.getitems.models;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * Helper class for providing sample content for user interfaces created by
@@ -36,17 +36,6 @@ public class ItemViewModel {
     private static void addItem(ItemModel item) {
         ITEMS.add(item);
         ITEM_MAP.put(item.id, item);
-    }
-
-
-
-    private static String makeDetails(int position) {
-        StringBuilder builder = new StringBuilder();
-        builder.append("Details about Item: ").append(position);
-        for (int i = 0; i < position; i++) {
-            builder.append("\nMore details information here.");
-        }
-        return builder.toString();
     }
 
     /**
@@ -83,4 +72,5 @@ public class ItemViewModel {
         public String toString() {
             return Name;
         }
-    }}
+    }
+}
