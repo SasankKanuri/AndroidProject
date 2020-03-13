@@ -28,9 +28,9 @@ public class ItemViewModel {
 
     static {
         // Add some sample items.
-        addItem(new ItemModel("Gold Sword", "Really Sharp", 1, 1, 1,ItemLocationEnum.PrimaryHand, "sword2"));
-        addItem(new ItemModel("Strong Shield", "Good and Strong", 0, 0, 2,ItemLocationEnum.OffHand,"shield4a"));
-        addItem(new ItemModel("Bunny Hat", "I Live for speed", 0, 0, 3,ItemLocationEnum.Head,"hat1"));
+        addItem(new ItemModel("Air Jordan", "Expensive Shoe", 1, 1, 1,ItemLocationEnum.Feet, "sword2"));
+        addItem(new ItemModel("Arm Sleeve", "Good Protectant", 0, 0, 2,ItemLocationEnum.OffHand,"shield4a"));
+        addItem(new ItemModel("Headband", "Stops Sweat", 0, 0, 3,ItemLocationEnum.Head,"hat1"));
     }
 
     private static void addItem(ItemModel item) {
